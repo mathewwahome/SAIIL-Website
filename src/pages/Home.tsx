@@ -9,9 +9,9 @@ interface Stat {
 
 const stats: Stat[] = [
   { value: '4', label: 'Expansion Countries' },
-  { value: '4+', label: 'Systems Tested' },
+  { value: '37', label: 'Systems Tested' },
   { value: '8+', label: 'Implementation Guides Published' },
-  { value: '10', label: 'Technical Staff Trained' },
+  { value: '1,600+', label: 'Trained in FHIR Fundamentals' },
 ];
 
 interface FrameworkService {
@@ -25,13 +25,13 @@ const frameworkServices: FrameworkService[] = [
   {
     id: 'T1',
     name: 'Testing',
-    desc: 'Conformance validation against FHIR, IHE and OpenHIE, with an AI copilot that explains failures.',
+    desc: 'Conformance validation against FHIR, IHE and OpenHIE architectural specifications, with AI assistance',
     isNew: false,
   },
   {
     id: 'T2',
     name: 'Training',
-    desc: 'A phased FHIR curriculum, from fundamentals to production, through blended cohorts.',
+    desc: 'A competency-based curriculum, innovatively delivered. The priority standard is FHIR.',
     isNew: false,
   },
   {
@@ -440,6 +440,9 @@ export const Home: React.FC = () => {
               </div>
             ))}
           </div>
+          <p className="home-stats-note">
+            1,600+ people trained in FHIR fundamentals under the Africa on FHIR initiative.
+          </p>
         </div>
       </section>
 
@@ -486,7 +489,7 @@ export const Home: React.FC = () => {
           </div>
 
           <p className="home-framework-caption">
-            Innovation connects all seven: turning what we learn into new tools, solutions and ventures.
+            Innovation connects all seven: turning what we know and learn into new tools, solutions and ventures.
           </p>
 
           {/* Service Groups (Foundational & New) */}
@@ -560,7 +563,7 @@ export const Home: React.FC = () => {
               Our Journey
             </span>
             <h2 className="home-journey-heading">
-              From a standards lab to Africa's interoperability engine.
+              From a standards and interoperability lab to Africa's health intelligence engine.
             </h2>
           </div>
 
@@ -702,7 +705,7 @@ export const Home: React.FC = () => {
       <section className="home-cta-section">
         <div className="home-cta-container">
           <h2 className="home-cta-heading">
-            Ready to build systems that actually talk to each other?
+            Ready to build systems that intelligently interact with each other?
           </h2>
           <p className="home-cta-desc">
             Whether you are an MoH, an implementer, a developer or a funder, SAIIL has the tools, standards and
