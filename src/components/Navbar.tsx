@@ -48,7 +48,7 @@ export const Navbar: React.FC = () => {
     if (href === '/') {
       return location.pathname === '/';
     }
-    return location.pathname.startsWith(href);
+    return location.pathname === href || location.pathname.startsWith(`${href}/`);
   };
 
   return (

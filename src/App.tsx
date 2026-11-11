@@ -9,6 +9,7 @@ import { TestBedAccess } from './pages/TestBedAccess';
 import { Resources } from './pages/Resources';
 import { Countries } from './pages/Countries';
 import { Contact } from './pages/Contact';
+import { NotFound } from './pages/NotFound';
 
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
@@ -34,7 +35,7 @@ export const App: React.FC = () => {
           <Route path="resources" element={<Resources />} />
           <Route path="countries" element={<Countries />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
